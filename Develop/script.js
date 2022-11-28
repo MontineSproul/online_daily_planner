@@ -13,3 +13,12 @@ setInterval(function() {
 
 //if time is in the future display color z
 
+//local storage 
+
+
+var oneEvent= localStorage.getItem('task6');
+var EventAtOne = document.getElementById('task6');
+EventAtOne.val(OneEvent);
+document.addEventListener("click", function(oneEvent){});
+Event.preventDefault();
+// document.getElementById("one").addEventListener("click", oneEvent);

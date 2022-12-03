@@ -6,9 +6,9 @@ var displayTime = function() {
     var currentHr = moment().hours();
     var hours = document.querySelectorAll('.hour');
     var elements = document.querySelectorAll('.description'); 
-    // var elements = element.length ++;
+        //set's todays current date at the top of the page 
     todayIs.textContent = "Today is: " + (moment().format('LLLL'));
-    // elements.forEach(changeColor);
+    //    for loop to run throught the different times of day and change the color
     for (let i = 0; i < elements.length; i++) {
     function changeColor(element, i) {
         var hourEl = hours[i];
@@ -30,23 +30,13 @@ var displayTime = function() {
     };
     changeColor(elements[i], i);
 } 
-// console.log(elements);
-// console.log(currentHr);
-
 }
 displayTime();
 
 setInterval(displayTime, 60000);
 
 
-// if time === current time then display color x
 
-
-
-
-//if time has past display color y
-
-//if time is in the future display color z
 
 //local storage 
 
